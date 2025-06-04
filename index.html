@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart Viewer</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <script src="assets/js/jquery-3.7.1.js"></script> -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <h2>Products in Cart</h2>
+
+  <form id="cart-form">
+    <input id="cartId" type="number" min="1" max="20" placeholder="Enter Cart ID (1-20)">
+    <button type="submit">View</button>
+  </form>
+
+
+  <section class="cart-products">
+    <h3>Cart Items</h3>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Images</th>
+        </tr>
+      </thead>
+      <tbody id="products"></tbody>
+    </table>
+  </section>
+ 
+
+  <section class="all-carts">
+    <h3>All Carts Overview</h3>
+    <table class="carts-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>User ID</th>
+          <th>Total Products</th>
+          <th>Total Quantity</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="carts"></tbody>
+    </table>
+  </section>
+</body>
+
+</html>
